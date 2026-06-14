@@ -1,0 +1,17 @@
+# Example system description for `rai classify examples/sample_system.yaml`
+name: credit-scoring-model
+purpose: Estimate applicant creditworthiness for consumer loans.
+
+# Annex III high-risk areas this system touches.
+domains:
+  - essential_services   # access to credit
+
+# Capabilities that may trigger transparency obligations.
+capabilities:
+  - interacts_with_humans
+
+# Prohibited practices (leave empty unless genuinely present).
+practices: []
+
+# True if the AI is a safety component of a regulated product.
+is_safety_component: false

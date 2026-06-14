@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" font-family="'JetBrains Mono','SF Mono',ui-monospace,monospace">
+  <defs>
+    <style>
+      .win{fill:#0b0f19;stroke:#2a3550;stroke-width:1.5}
+      .bar{fill:#0f1525}
+      .prompt{fill:#10b981}.key{fill:#3b82f6}.hi{fill:#22d3ee}
+      .fg{fill:#dbe2ee}.muted{fill:#93a1b8}.dim{fill:#5d6b85}
+      .warn{fill:#f59e0b}
+    </style>
+  </defs>
+  <rect width="880" height="430" rx="12" class="win"/>
+  <rect width="880" height="36" rx="12" class="bar"/>
+  <rect y="24" width="880" height="12" class="bar"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="18" r="6" fill="#27c93f"/>
+  <text x="440" y="23" text-anchor="middle" class="dim" font-size="12">rai — responsible AI governance CLI</text>
+
+  <g font-size="13.5">
+    <text x="20" y="68"><tspan class="prompt">$ </tspan><tspan class="fg">rai classify examples/sample_system.yaml</tspan></text>
+    <text x="20" y="90"><tspan class="muted">System:    </tspan><tspan class="fg">credit-scoring-model</tspan></text>
+    <text x="20" y="110"><tspan class="muted">Risk tier: </tspan><tspan class="hi" font-weight="700">HIGH</tspan></text>
+    <text x="20" y="130"><tspan class="muted">Rationale: </tspan><tspan class="fg">High-risk — Annex III area(s): essential_services.</tspan></text>
+    <text x="20" y="150" class="muted">Obligations:</text>
+    <text x="20" y="168" class="fg">  - Risk management system (Art. 9)</text>
+    <text x="20" y="184" class="fg">  - Data and data governance (Art. 10)  ... (7 total)</text>
+
+    <text x="20" y="222"><tspan class="prompt">$ </tspan><tspan class="fg">rai check examples/sample_checklist.yaml</tspan></text>
+    <text x="20" y="244"><tspan class="muted">Coverage: </tspan><tspan class="warn" font-weight="700">57%</tspan><tspan class="muted"> (4/7)</tspan></text>
+    <text x="20" y="262" class="muted">Open controls:</text>
+    <text x="20" y="280" class="fg">  [ ] AIA-03 — Technical documentation (Art. 11) (in_progress)</text>
+    <text x="20" y="296" class="fg">  [ ] AIA-05 — Transparency &amp; information to users (Art. 13) (todo)</text>
+    <text x="20" y="312" class="fg">  [ ] AIA-07 — Accuracy, robustness &amp; cybersecurity (Art. 15)</text>
+
+    <text x="20" y="350"><tspan class="prompt">$ </tspan><tspan class="fg">rai modelcard examples/sample_model.yaml -o CARD.md</tspan></text>
+    <text x="20" y="372"><tspan class="muted">Wrote CARD.md  (completeness: </tspan><tspan class="hi">100%</tspan><tspan class="muted">)</tspan></text>
+
+    <text x="20" y="404"><tspan class="prompt">$ </tspan><tspan class="fg">pytest -q  </tspan><tspan class="hi">.........  9 passed</tspan></text>
+  </g>
+</svg>

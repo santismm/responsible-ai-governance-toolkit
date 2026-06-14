@@ -1,0 +1,31 @@
+# Example model spec for `rai modelcard examples/sample_model.yaml`
+name: credit-scoring-model
+version: "1.2.0"
+owners:
+  - Risk & Analytics team
+overview: >
+  Gradient-boosted model estimating probability of default for consumer loan
+  applications, used as decision support for human underwriters.
+intended_use: >
+  Provide a risk score to assist (not replace) a human credit decision within
+  the EU retail lending product.
+out_of_scope: >
+  Must not be used for automated rejection without human review, nor for any
+  purpose outside consumer credit.
+factors:
+  - Applicant age band
+  - Geographic region
+  - Income bracket
+metrics:
+  AUC: "0.84 on held-out 2025 data"
+  Demographic parity difference: "0.03 across protected groups"
+training_data: >
+  Internal lending history 2019-2024, de-identified, with documented exclusions.
+evaluation_data: >
+  Held-out 2025 applications, stratified by region and protected attributes.
+ethical_considerations: >
+  Potential for disparate impact across protected groups; monitored with parity
+  metrics and subject to quarterly fairness review.
+limitations: >
+  Performance degrades for thin-file applicants; not validated outside the EU
+  retail segment.

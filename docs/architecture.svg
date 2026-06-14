@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'Inter','Segoe UI',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#22d3ee"/>
+    </marker>
+    <style>
+      .bg{fill:#070a13}
+      .card{fill:#0b0f19;stroke:#2a3550;stroke-width:1.5}
+      .eng{fill:#0f1525;stroke:#10b981;stroke-width:1.5}
+      .ink{fill:#f8fafc}.fg{fill:#dbe2ee}.muted{fill:#93a1b8}.faint{fill:#5d6b85}
+      .mono{font-family:'JetBrains Mono','SF Mono',monospace}
+      .grid{stroke:#1b2336;stroke-width:1}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1000" height="600"/>
+  <line class="grid" x1="0" y1="118" x2="1000" y2="118" opacity="0.5"/>
+  <line class="grid" x1="0" y1="486" x2="1000" y2="486" opacity="0.5"/>
+
+  <text x="40" y="56" class="ink" font-size="26" font-weight="700">responsible-ai-governance-toolkit</text>
+  <text x="40" y="84" class="muted" font-size="15">Responsible AI governance as code — classify, score, document, audit. Explainable by design.</text>
+
+  <!-- Inputs -->
+  <text x="115" y="150" text-anchor="middle" class="faint mono" font-size="12">INPUT</text>
+  <rect class="card" x="40" y="165" width="150" height="58" rx="10"/>
+  <text x="115" y="190" text-anchor="middle" class="ink mono" font-size="13">system.yaml</text>
+  <text x="115" y="210" text-anchor="middle" class="muted" font-size="11">what it does</text>
+  <rect class="card" x="40" y="300" width="150" height="58" rx="10"/>
+  <text x="115" y="325" text-anchor="middle" class="ink mono" font-size="13">model.yaml</text>
+  <text x="115" y="345" text-anchor="middle" class="muted" font-size="11">how it was built</text>
+
+  <!-- Engine -->
+  <text x="500" y="150" text-anchor="middle" class="faint mono" font-size="12">ENGINE  ·  rai_toolkit</text>
+  <rect class="eng" x="290" y="165" width="200" height="58" rx="10"/>
+  <text x="390" y="190" text-anchor="middle" class="ink" font-size="14" font-weight="700">EU AI Act classifier</text>
+  <text x="390" y="210" text-anchor="middle" class="muted" font-size="11">4 risk tiers · Annex III rules</text>
+
+  <rect class="eng" x="510" y="165" width="200" height="58" rx="10"/>
+  <text x="610" y="190" text-anchor="middle" class="ink" font-size="14" font-weight="700">Risk scorer</text>
+  <text x="610" y="210" text-anchor="middle" class="muted" font-size="11">likelihood × impact</text>
+
+  <rect class="eng" x="290" y="300" width="200" height="58" rx="10"/>
+  <text x="390" y="325" text-anchor="middle" class="ink" font-size="14" font-weight="700">Checklist validator</text>
+  <text x="390" y="345" text-anchor="middle" class="muted" font-size="11">coverage + gaps + evidence</text>
+
+  <rect class="eng" x="510" y="300" width="200" height="58" rx="10"/>
+  <text x="610" y="325" text-anchor="middle" class="ink" font-size="14" font-weight="700">Model card generator</text>
+  <text x="610" y="345" text-anchor="middle" class="muted" font-size="11">completeness score</text>
+
+  <!-- Outputs -->
+  <text x="885" y="150" text-anchor="middle" class="faint mono" font-size="12">OUTPUT</text>
+  <rect class="card" x="800" y="165" width="170" height="58" rx="10"/>
+  <text x="885" y="190" text-anchor="middle" class="ink" font-size="13" font-weight="700">Risk tier +</text>
+  <text x="885" y="208" text-anchor="middle" class="ink" font-size="13" font-weight="700">obligations</text>
+  <rect class="card" x="800" y="300" width="170" height="58" rx="10"/>
+  <text x="885" y="325" text-anchor="middle" class="ink" font-size="13" font-weight="700">Governance</text>
+  <text x="885" y="343" text-anchor="middle" class="ink" font-size="13" font-weight="700">artifacts (MD)</text>
+
+  <!-- arrows -->
+  <g stroke="#22d3ee" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="190" y1="194" x2="285" y2="194"/>
+    <line x1="190" y1="329" x2="285" y2="329"/>
+    <line x1="710" y1="194" x2="795" y2="194"/>
+    <line x1="710" y1="329" x2="795" y2="329"/>
+  </g>
+
+  <!-- Templates band -->
+  <text x="500" y="514" text-anchor="middle" class="faint mono" font-size="12">TEMPLATES  ·  /templates</text>
+  <g font-size="13" class="fg mono" text-anchor="middle">
+    <rect x="60" y="530" width="200" height="44" rx="8" fill="#0f1525" stroke="#2a3550"/>
+    <text x="160" y="557">model-card.md</text>
+    <rect x="290" y="530" width="200" height="44" rx="8" fill="#0f1525" stroke="#2a3550"/>
+    <text x="390" y="557">risk-assessment.md</text>
+    <rect x="520" y="530" width="180" height="44" rx="8" fill="#0f1525" stroke="#2a3550"/>
+    <text x="610" y="557">dpia-privacy.md</text>
+    <rect x="730" y="530" width="210" height="44" rx="8" fill="#0f1525" stroke="#2a3550"/>
+    <text x="835" y="557">eu-ai-act-checklist.md</text>
+  </g>
+</svg>
