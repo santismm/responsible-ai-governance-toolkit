@@ -1,0 +1,15 @@
+# responsible-ai-governance-toolkit
+
+> Responsible AI governance toolkit — EU AI Act, ISO/IEC 42001, NIST AI RMF, plus practical frameworks, controls and checklists for agentic systems.
+
+Generated from https://santismm.com — the single source of truth. Do not edit by hand.
+
+## Governance
+
+- [GOV-004 Agentic AI Governance Checklist](governance/agentic-ai-governance-checklist.md) — canonical: https://santismm.com/en/governance/agentic-ai-governance-checklist
+- [GOV-006 Audit Framework for Agentic Systems](governance/audit-framework-for-agentic-systems.md) — canonical: https://santismm.com/en/governance/audit-framework-for-agentic-systems
+- [GOV-005 Enterprise AI Governance Framework](governance/enterprise-ai-governance-framework.md) — canonical: https://santismm.com/en/governance/enterprise-ai-governance-framework
+- [GOV-001 EU AI Act](governance/eu-ai-act.md) — canonical: https://santismm.com/en/governance/eu-ai-act
+- [GOV-007 Human Oversight and Accountability Policy](governance/human-oversight-and-accountability-policy.md) — canonical: https://santismm.com/en/governance/human-oversight-and-accountability-policy
+- [GOV-002 ISO/IEC 42001](governance/iso-42001.md) — canonical: https://santismm.com/en/governance/iso-42001
+- [GOV-003 NIST AI Risk Management Framework](governance/nist-ai-rmf.md) — canonical: https://santismm.com/en/governance/nist-ai-rmf

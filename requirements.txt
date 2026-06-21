@@ -1,6 +1,0 @@
-# Runtime
-PyYAML>=6
-
-# Development / CI
-pytest>=8
-ruff>=0.6
